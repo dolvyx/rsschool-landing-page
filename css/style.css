@@ -544,14 +544,101 @@ button {
   .metric__divider {
     display: none;
   }
-
-  .metric__number {
-    font-size: 1.25rem;
-  }
-
-  .metric__label {
-    font-size: 0.7rem;
-    white-space: normal;
-  }
 }
 
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+
+.section-header__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.section-header__subtitle {
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.about {
+  padding: 80px 0;
+  position: relative;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.feature-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-card__icon-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background-color: var(--accent-light);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.feature-card__text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+@media (max-width: 860px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .section-header {
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 36px;
+  }
+}
