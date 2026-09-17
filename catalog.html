@@ -7,10 +7,60 @@
   <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/theme.js"></script>
 </head>
 <body>
-  <div id="root"></div>
-  <script src="./js/theme.js"></script>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="./index.html" class="logo" aria-label="Flora and Ceramic homepage">
+        <svg class="logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="var(--accent)"/>
+          <path d="M16 6c-3 5-7 7-7 13a7 7 0 0 0 14 0c0-6-4-8-7-13z" fill="var(--bg-primary)"/>
+          <path d="M16 10v9" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span>Flora & Ceramic</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="./index.html#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="./index.html#plants" class="nav__link">Featured</a></li>
+          <li class="nav__item"><a href="./index.html#care" class="nav__link">Care Guide</a></li>
+          <li class="nav__item"><a href="./catalog.html" class="nav__link nav__link--active">Catalog</a></li>
+          <li class="nav__item"><a href="./index.html#contacts" class="nav__link">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="theme-toggle" aria-label="Switch theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button type="button" class="burger-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  </main>
+
   <script src="./js/catalog.js"></script>
 </body>
 </html>
