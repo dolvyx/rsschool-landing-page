@@ -642,3 +642,215 @@ button {
     margin-bottom: 36px;
   }
 }
+
+.plants {
+  padding: 90px 0;
+  background-color: var(--bg-secondary);
+  transition: background-color var(--transition-normal);
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.carousel__track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel__track {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  transition: transform var(--transition-normal);
+}
+
+.plant-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.plant-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.plant-card__image-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.plant-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.plant-card:hover .plant-card__image {
+  transform: scale(1.05);
+}
+
+.plant-card__tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+}
+
+.plant-card__content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.plant-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.plant-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.plant-card__price {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.plant-card__desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  flex-grow: 1;
+}
+
+.plant-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+  margin-top: 8px;
+}
+
+.plant-card__detail {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.plant-card__btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: var(--accent-light);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.plant-card__btn:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.carousel__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.carousel__btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.carousel__btn:hover {
+  border-color: var(--accent);
+  background-color: var(--accent-light);
+  transform: scale(1.08);
+}
+
+.carousel__indicators {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background-color: var(--border-color);
+  transition: width var(--transition-fast), background-color var(--transition-fast);
+}
+
+.indicator--active {
+  width: 28px;
+  background-color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  .carousel__track {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .carousel__track article:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .plants {
+    padding: 60px 0;
+  }
+
+  .carousel__track {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel__track article:nth-child(2) {
+    display: none;
+  }
+
+  .plant-card__content {
+    padding: 20px;
+  }
+}
+
