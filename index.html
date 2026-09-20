@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora & Ceramic — Houseplants & Artisan Ceramics Studio</title>
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/theme.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="./index.html" class="logo" aria-label="Flora and Ceramic homepage">
+        <img src="./assets/icons/logo.svg" alt="" width="32" height="32" class="logo__icon" aria-hidden="true">
+        <span>Flora & Ceramic</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="./index.html#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="./index.html#plants" class="nav__link">Featured</a></li>
+          <li class="nav__item"><a href="./index.html#care" class="nav__link">Care Guide</a></li>
+          <li class="nav__item"><a href="./catalog.html" class="nav__link">Catalog</a></li>
+          <li class="nav__item"><a href="./index.html#contacts" class="nav__link">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="theme-toggle" aria-label="Switch theme">
+          <img src="./assets/icons/moon.svg" alt="" width="20" height="20" class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+          <img src="./assets/icons/sun.svg" alt="" width="20" height="20" class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+        </button>
+
+        <button type="button" class="burger-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">Artisan Plant Studio</span>
+          <h1 class="hero__title">Bring Nature & Handcrafted Ceramics Into Your Home</h1>
+          <p class="hero__description">
+            Discover thoughtfully curated indoor plants paired with small-batch handmade ceramic planters. We create calming botanical spaces that inspire your everyday life.
+          </p>
+
+          <div class="hero__actions">
+            <a href="./catalog.html" class="btn btn--primary">
+              <span>Explore Catalog</span>
+              <img src="./assets/icons/arrow-right.svg" alt="" width="18" height="18" class="btn__icon" aria-hidden="true">
+            </a>
+            <a href="#about" class="btn btn--secondary">Our Story</a>
+          </div>
+
+          <div class="hero__metrics">
+            <div class="metric">
+              <span class="metric__number">50+</span>
+              <span class="metric__label">Rare Plant Species</span>
+            </div>
+            <div class="metric__divider" aria-hidden="true"></div>
+            <div class="metric">
+              <span class="metric__number">100%</span>
+              <span class="metric__label">Handmade Ceramics</span>
+            </div>
+            <div class="metric__divider" aria-hidden="true"></div>
+            <div class="metric">
+              <span class="metric__number">4.9★</span>
+              <span class="metric__label">Customer Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__image-wrapper">
+            <img src="./assets/images/hero-plant.jpg" alt="Minimalist interior with lush green houseplant in handmade terracotta ceramic pot" class="hero__image" width="600" height="700" loading="eager">
+            <div class="hero__floating-card">
+              <div class="floating-card__icon" aria-hidden="true">
+                <img src="./assets/icons/leaf.svg" alt="" width="20" height="20">
+              </div>
+              <div class="floating-card__info">
+                <span class="floating-card__title">Organic Soil Included</span>
+                <span class="floating-card__desc">Pre-potted & ready to thrive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Our Philosophy</span>
+          <h2 class="section-header__title">Rooted in Nature, Crafted by Hand</h2>
+          <p class="section-header__subtitle">
+            We believe indoor greenery should be more than decoration. Each plant is paired with handcrafted ceramics to create living focal points for calm and mindful living.
+          </p>
+        </div>
+
+        <div class="about__grid">
+          <article class="feature-card">
+            <div class="feature-card__icon-wrapper">
+              <img src="./assets/icons/pottery.svg" alt="" width="24" height="24" class="feature-card__icon" aria-hidden="true">
+            </div>
+            <h3 class="feature-card__title">Hand-thrown Pottery</h3>
+            <p class="feature-card__text">
+              Every planter is individually shaped on the potter’s wheel and kiln-fired with organic glazes. No two pieces are identical.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon-wrapper">
+              <img src="./assets/icons/shield.svg" alt="" width="24" height="24" class="feature-card__icon" aria-hidden="true">
+            </div>
+            <h3 class="feature-card__title">Thriving & Acclimated</h3>
+            <p class="feature-card__text">
+              All plants are nurtured in our greenhouse, pre-treated against pests, and potted in custom aerated soil mixes for long-term health.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon-wrapper">
+              <img src="./assets/icons/sparkle.svg" alt="" width="24" height="24" class="feature-card__icon" aria-hidden="true">
+            </div>
+            <h3 class="feature-card__title">Custom Plant Pairing</h3>
+            <p class="feature-card__text">
+              We carefully match leaf structures and growth habits with complementary ceramic silhouettes, drainage options, and undertones.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon-wrapper">
+              <img src="./assets/icons/message.svg" alt="" width="24" height="24" class="feature-card__icon" aria-hidden="true">
+            </div>
+            <h3 class="feature-card__title">Lifetime Plant Support</h3>
+            <p class="feature-card__text">
+              Direct access to our botanical experts. Send photos anytime for diagnostics, repotting guidance, and seasonal watering tips.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="plants" id="plants">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Featured Botanicals</span>
+          <h2 class="section-header__title">Studio Favorites & Pairings</h2>
+          <p class="section-header__subtitle">
+            A seasonal showcase of our most beloved plant specimens, matched with bespoke planters crafted in our ceramic workshop.
+          </p>
+        </div>
+
+        <div class="carousel">
+          <div class="carousel__track-container">
+            <div class="carousel__track">
+              <article class="plant-card">
+                <div class="plant-card__image-box">
+                  <img src="./assets/images/featured-1.jpg" alt="Monstera Deliciosa in ribbed ceramic pot" class="plant-card__image" width="380" height="380" loading="lazy">
+                  <span class="plant-card__tag">Low Maintenance</span>
+                </div>
+                <div class="plant-card__content">
+                  <div class="plant-card__header">
+                    <h3 class="plant-card__title">Monstera Deliciosa</h3>
+                    <span class="plant-card__price">$68</span>
+                  </div>
+                  <p class="plant-card__desc">Iconic Swiss cheese plant in an earth-tone stoneware pot with matching drip tray.</p>
+                  <div class="plant-card__footer">
+                    <span class="plant-card__detail">Light: Bright Indirect</span>
+                    <a href="./catalog.html" class="plant-card__btn" aria-label="View Monstera Deliciosa details">View Details</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="plant-card">
+                <div class="plant-card__image-box">
+                  <img src="./assets/images/featured-2.jpg" alt="Ficus Lyrata in minimal matte glaze pot" class="plant-card__image" width="380" height="380" loading="lazy">
+                  <span class="plant-card__tag">Statement Tree</span>
+                </div>
+                <div class="plant-card__content">
+                  <div class="plant-card__header">
+                    <h3 class="plant-card__title">Fiddle Leaf Fig</h3>
+                    <span class="plant-card__price">$92</span>
+                  </div>
+                  <p class="plant-card__desc">Lush sculptural tree settled in an oversized raw matte ceramic vessel.</p>
+                  <div class="plant-card__footer">
+                    <span class="plant-card__detail">Light: Direct Morning</span>
+                    <a href="./catalog.html" class="plant-card__btn" aria-label="View Fiddle Leaf Fig details">View Details</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="plant-card">
+                <div class="plant-card__image-box">
+                  <img src="./assets/images/featured-3.jpg" alt="Sansevieria Moonshine in sage ceramic bowl" class="plant-card__image" width="380" height="380" loading="lazy">
+                  <span class="plant-card__tag">Air Purifier</span>
+                </div>
+                <div class="plant-card__content">
+                  <div class="plant-card__header">
+                    <h3 class="plant-card__title">Sansevieria Moonshine</h3>
+                    <span class="plant-card__price">$48</span>
+                  </div>
+                  <p class="plant-card__desc">Silvery-green drought-tolerant succulent in a hand-glazed sage ceramic pot.</p>
+                  <div class="plant-card__footer">
+                    <span class="plant-card__detail">Light: Any Light</span>
+                    <a href="./catalog.html" class="plant-card__btn" aria-label="View Sansevieria Moonshine details">View Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel__controls">
+            <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous slide">
+              <img src="./assets/icons/arrow-left.svg" alt="" width="20" height="20" class="carousel__btn-icon" aria-hidden="true">
+            </button>
+
+            <div class="carousel__indicators" aria-label="Slide indicators">
+              <span class="indicator indicator--active" aria-current="true"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+
+            <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next slide">
+              <img src="./assets/icons/chevron-right.svg" alt="" width="20" height="20" class="carousel__btn-icon" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="care" id="care">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Botanical Essentials</span>
+          <h2 class="section-header__title">Simple Rules for Thriving Plants</h2>
+          <p class="section-header__subtitle">
+            Caring for indoor greens is a relaxing ritual. Follow three core principles to keep your foliage lush and planters pristine.
+          </p>
+        </div>
+
+        <div class="care__grid">
+          <article class="care-card">
+            <div class="care-card__icon-box">
+              <img src="./assets/icons/drop.svg" alt="" width="24" height="24" class="care-card__icon" aria-hidden="true">
+            </div>
+            <div class="care-card__content">
+              <h3 class="care-card__title">Mindful Watering</h3>
+              <p class="care-card__text">
+                Check topsoil dryness before pouring. Most plants prefer deep, infrequent soaks with thorough drainage over daily sprinkles.
+              </p>
+              <span class="care-card__tip">Pro tip: Empty outer pots after 15 mins</span>
+            </div>
+          </article>
+
+          <article class="care-card">
+            <div class="care-card__icon-box">
+              <img src="./assets/icons/sun-guide.svg" alt="" width="24" height="24" class="care-card__icon" aria-hidden="true">
+            </div>
+            <div class="care-card__content">
+              <h3 class="care-card__title">Filtered Natural Light</h3>
+              <p class="care-card__text">
+                Position near east or north windows. Intense direct sun can scorch delicate leaves, while sheer curtains create ideal diffusion.
+              </p>
+              <span class="care-card__tip">Pro tip: Rotate pots weekly for even growth</span>
+            </div>
+          </article>
+
+          <article class="care-card">
+            <div class="care-card__icon-box">
+              <img src="./assets/icons/thermometer.svg" alt="" width="24" height="24" class="care-card__icon" aria-hidden="true">
+            </div>
+            <div class="care-card__content">
+              <h3 class="care-card__title">Humidity & Climate</h3>
+              <p class="care-card__text">
+                Keep room temperature between 18–24°C. Group plants together or place them on pebble trays to create natural micro-humidity.
+              </p>
+              <span class="care-card__tip">Pro tip: Keep away from hot radiators</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col footer__col--brand">
+          <a href="./index.html" class="logo" aria-label="Flora and Ceramic homepage">
+            <img src="./assets/icons/logo.svg" alt="" width="32" height="32" class="logo__icon" aria-hidden="true">
+            <span>Flora & Ceramic</span>
+          </a>
+          <p class="footer__tagline">
+            Botanical studio combining rare indoor plants with handcrafted artisan ceramics. Bringing serene natural aesthetics to your space.
+          </p>
+          <div class="footer__socials">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <img src="./assets/icons/instagram.svg" alt="" width="20" height="20" aria-hidden="true">
+            </a>
+            <a href="https://pinterest.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Pinterest">
+              <img src="./assets/icons/pinterest.svg" alt="" width="20" height="20" aria-hidden="true">
+            </a>
+            <a href="https://t.me" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Join our Telegram community">
+              <img src="./assets/icons/telegram.svg" alt="" width="20" height="20" aria-hidden="true">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Navigation</h3>
+          <ul class="footer__list">
+            <li><a href="./index.html#about" class="footer__link">About Studio</a></li>
+            <li><a href="./index.html#plants" class="footer__link">Featured Plants</a></li>
+            <li><a href="./index.html#care" class="footer__link">Care Guide</a></li>
+            <li><a href="./catalog.html" class="footer__link">Full Catalog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Visit & Contact</h3>
+          <ul class="footer__contacts">
+            <li class="footer__contact-item">
+              <img src="./assets/icons/map-pin.svg" alt="" width="18" height="18" class="contact-icon" aria-hidden="true">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="footer__link">
+                Greenhouse Alley 42, Botanical District
+              </a>
+            </li>
+            <li class="footer__contact-item">
+              <img src="./assets/icons/phone.svg" alt="" width="18" height="18" class="contact-icon" aria-hidden="true">
+              <a href="tel:+15552345678" class="footer__link">+1 (555) 234-5678</a>
+            </li>
+            <li class="footer__contact-item">
+              <img src="./assets/icons/clock.svg" alt="" width="18" height="18" class="contact-icon" aria-hidden="true">
+              <span>Tue–Sun: 10:00 – 20:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Flora & Ceramic. All rights reserved.</p>
+        <a href="https://rs.school" target="_blank" rel="noopener noreferrer" class="footer__school-link">
+          Rolling Scopes School
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

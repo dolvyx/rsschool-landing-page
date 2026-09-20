@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog — Flora & Ceramic</title>
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/theme.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="./index.html" class="logo" aria-label="Flora and Ceramic homepage">
+        <img src="./assets/icons/logo.svg" alt="" width="32" height="32" class="logo__icon" aria-hidden="true">
+        <span>Flora & Ceramic</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="./index.html#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="./index.html#plants" class="nav__link">Featured</a></li>
+          <li class="nav__item"><a href="./index.html#care" class="nav__link">Care Guide</a></li>
+          <li class="nav__item"><a href="./catalog.html" class="nav__link nav__link--active">Catalog</a></li>
+          <li class="nav__item"><a href="./index.html#contacts" class="nav__link">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="theme-toggle" aria-label="Switch theme">
+          <img src="./assets/icons/moon.svg" alt="" width="20" height="20" class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+          <img src="./assets/icons/sun.svg" alt="" width="20" height="20" class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+        </button>
+
+        <button type="button" class="burger-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog-hero">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Botanical Collection</span>
+          <h1 class="section-header__title">Plants & Artisan Ceramics</h1>
+          <p class="section-header__subtitle">
+            Explore our curated living collection. Every specimen is paired with handcrafted stoneware and arrives potted in mineral-rich organic soil.
+          </p>
+        </div>
+
+        <div class="catalog-filters" role="tablist" aria-label="Catalog Categories">
+          <button type="button" class="filter-tab filter-tab--active" role="tab" aria-selected="true">
+            <span>🌿 Aroids & Tropicals</span>
+            <span class="filter-tab__count">8</span>
+          </button>
+          <button type="button" class="filter-tab" role="tab" aria-selected="false">
+            <span>🌵 Succulents & Desert</span>
+            <span class="filter-tab__count">6</span>
+          </button>
+          <button type="button" class="filter-tab" role="tab" aria-selected="false">
+            <span>🏺 Artisan Planters</span>
+            <span class="filter-tab__count">6</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section">
+      <div class="container">
+        <div class="catalog__grid">
+          <article class="catalog-card">
+            <div class="catalog-card__media">
+              <img src="./assets/images/plant-1.jpg" alt="Monstera Deliciosa in ribbed ceramic pot" class="catalog-card__image" width="300" height="300" loading="lazy">
+              <span class="catalog-card__badge">Bestseller</span>
+            </div>
+            <div class="catalog-card__body">
+              <div class="catalog-card__header">
+                <h3 class="catalog-card__title">Monstera Deliciosa</h3>
+                <span class="catalog-card__price">$68</span>
+              </div>
+              <p class="catalog-card__desc">Classic Swiss cheese plant with iconic perforated leaves, potted in an earthy ribbed stoneware planter.</p>
+              <div class="catalog-card__meta">
+                <span class="catalog-card__info">Medium Light</span>
+                <span class="catalog-card__info">Pot: Ø 18 cm</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-card__media">
+              <img src="./assets/images/plant-2.jpg" alt="Philodendron Birkin with variegated pinstripes" class="catalog-card__image" width="300" height="300" loading="lazy">
+              <span class="catalog-card__badge">Rare Foliage</span>
+            </div>
+            <div class="catalog-card__body">
+              <div class="catalog-card__header">
+                <h3 class="catalog-card__title">Philodendron Birkin</h3>
+                <span class="catalog-card__price">$54</span>
+              </div>
+              <p class="catalog-card__desc">Striking cream-and-green variegated leaves in a smooth sand-textured ceramic vessel.</p>
+              <div class="catalog-card__meta">
+                <span class="catalog-card__info">Bright Indirect</span>
+                <span class="catalog-card__info">Pot: Ø 15 cm</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-card__media">
+              <img src="./assets/images/plant-3.jpg" alt="Anthurium Clarinervium with white velvet veins" class="catalog-card__image" width="300" height="300" loading="lazy">
+              <span class="catalog-card__badge">Collector Choice</span>
+            </div>
+            <div class="catalog-card__body">
+              <div class="catalog-card__header">
+                <h3 class="catalog-card__title">Anthurium Clarinervium</h3>
+                <span class="catalog-card__price">$78</span>
+              </div>
+              <p class="catalog-card__desc">Heart-shaped dark velvet foliage accented with electric white veins in raw terracotta.</p>
+              <div class="catalog-card__meta">
+                <span class="catalog-card__info">High Humidity</span>
+                <span class="catalog-card__info">Pot: Ø 16 cm</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-card__media">
+              <img src="./assets/images/plant-4.jpg" alt="Ficus Elastica Burgundy with deep glossy leaves" class="catalog-card__image" width="300" height="300" loading="lazy">
+              <span class="catalog-card__badge">Easy Care</span>
+            </div>
+            <div class="catalog-card__body">
+              <div class="catalog-card__header">
+                <h3 class="catalog-card__title">Ficus Elastica Burgundy</h3>
+                <span class="catalog-card__price">$48</span>
+              </div>
+              <p class="catalog-card__desc">Bold upright rubber tree with dark glossy burgundy tones in a minimal matte grey bowl.</p>
+              <div class="catalog-card__meta">
+                <span class="catalog-card__info">Moderate Light</span>
+                <span class="catalog-card__info">Pot: Ø 20 cm</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-card__media">
+              <img src="./assets/images/plant-5.jpg" alt="Alocasia Amazonica Polly with sculptural spear leaves" class="catalog-card__image" width="300" height="300" loading="lazy">
+              <span class="catalog-card__badge">Architectural</span>
+            </div>
+            <div class="catalog-card__body">
+              <div class="catalog-card__header">
+                <h3 class="catalog-card__title">Alocasia Polly</h3>
+                <span class="catalog-card__price">$44</span>
+              </div>
+              <p class="catalog-card__desc">Dramatic jagged arrow leaves with silvery-white veins in a dark obsidian ceramic pot.</p>
+              <div class="catalog-card__meta">
+                <span class="catalog-card__info">Bright Indirect</span>
+                <span class="catalog-card__info">Pot: Ø 14 cm</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-card__media">
+              <img src="./assets/images/plant-6.jpg" alt="Monstera Adansonii monkey mask vining plant" class="catalog-card__image" width="300" height="300" loading="lazy">
+              <span class="catalog-card__badge">Vining</span>
+            </div>
+            <div class="catalog-card__body">
+              <div class="catalog-card__header">
+                <h3 class="catalog-card__title">Monstera Adansonii</h3>
+                <span class="catalog-card__price">$38</span>
+              </div>
+              <p class="catalog-card__desc">Fast-growing Swiss cheese vine with fenestrated leaves cascading from a textured pedestal pot.</p>
+              <div class="catalog-card__meta">
+                <span class="catalog-card__info">Medium Light</span>
+                <span class="catalog-card__info">Pot: Ø 15 cm</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-card__media">
+              <img src="./assets/images/plant-7.jpg" alt="Philodendron Gloriosum crawling heart leaf" class="catalog-card__image" width="300" height="300" loading="lazy">
+              <span class="catalog-card__badge">Collector Rare</span>
+            </div>
+            <div class="catalog-card__body">
+              <div class="catalog-card__header">
+                <h3 class="catalog-card__title">Philodendron Gloriosum</h3>
+                <span class="catalog-card__price">$86</span>
+              </div>
+              <p class="catalog-card__desc">Exquisite creeping terrestrial aroid with large velvety leaves in an oval rectangular ceramic trough.</p>
+              <div class="catalog-card__meta">
+                <span class="catalog-card__info">Gentle Shade</span>
+                <span class="catalog-card__info">Pot: Ø 22 cm</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-card__media">
+              <img src="./assets/images/plant-8.jpg" alt="Calathea Orbifolia round striped leaves" class="catalog-card__image" width="300" height="300" loading="lazy">
+              <span class="catalog-card__badge">Pet Friendly</span>
+            </div>
+            <div class="catalog-card__body">
+              <div class="catalog-card__header">
+                <h3 class="catalog-card__title">Calathea Orbifolia</h3>
+                <span class="catalog-card__price">$52</span>
+              </div>
+              <p class="catalog-card__desc">Oversized round designer foliage painted with metallic silver stripes in a warm clay planter.</p>
+              <div class="catalog-card__meta">
+                <span class="catalog-card__info">Filtered Light</span>
+                <span class="catalog-card__info">Pot: Ø 18 cm</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="catalog__load-more">
+          <button type="button" class="btn btn--secondary btn--load-more" aria-label="Load more botanical items">
+            <img src="./assets/icons/refresh.svg" alt="" width="18" height="18" class="btn__icon" aria-hidden="true">
+            <span>Load More Items</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col footer__col--brand">
+          <a href="./index.html" class="logo" aria-label="Flora and Ceramic homepage">
+            <img src="./assets/icons/logo.svg" alt="" width="32" height="32" class="logo__icon" aria-hidden="true">
+            <span>Flora & Ceramic</span>
+          </a>
+          <p class="footer__tagline">
+            Botanical studio combining rare indoor plants with handcrafted artisan ceramics. Bringing serene natural aesthetics to your space.
+          </p>
+          <div class="footer__socials">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <img src="./assets/icons/instagram.svg" alt="" width="20" height="20" aria-hidden="true">
+            </a>
+            <a href="https://pinterest.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Pinterest">
+              <img src="./assets/icons/pinterest.svg" alt="" width="20" height="20" aria-hidden="true">
+            </a>
+            <a href="https://t.me" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Join our Telegram community">
+              <img src="./assets/icons/telegram.svg" alt="" width="20" height="20" aria-hidden="true">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Navigation</h3>
+          <ul class="footer__list">
+            <li><a href="./index.html#about" class="footer__link">About Studio</a></li>
+            <li><a href="./index.html#plants" class="footer__link">Featured Plants</a></li>
+            <li><a href="./index.html#care" class="footer__link">Care Guide</a></li>
+            <li><a href="./catalog.html" class="footer__link">Full Catalog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Visit & Contact</h3>
+          <ul class="footer__contacts">
+            <li class="footer__contact-item">
+              <img src="./assets/icons/map-pin.svg" alt="" width="18" height="18" class="contact-icon" aria-hidden="true">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="footer__link">
+                Greenhouse Alley 42, Botanical District
+              </a>
+            </li>
+            <li class="footer__contact-item">
+              <img src="./assets/icons/phone.svg" alt="" width="18" height="18" class="contact-icon" aria-hidden="true">
+              <a href="tel:+15552345678" class="footer__link">+1 (555) 234-5678</a>
+            </li>
+            <li class="footer__contact-item">
+              <img src="./assets/icons/clock.svg" alt="" width="18" height="18" class="contact-icon" aria-hidden="true">
+              <span>Tue–Sun: 10:00 – 20:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Flora & Ceramic. All rights reserved.</p>
+        <a href="https://rs.school" target="_blank" rel="noopener noreferrer" class="footer__school-link">
+          Rolling Scopes School
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/catalog.js"></script>
+</body>
+</html>
